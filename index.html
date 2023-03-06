@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body bgcolor = 'skyblue'>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <h1><i>LAKSHMAN PRAVEEN VULASI</i></h1>
+    </header>
+
+    <main>
+      <section id="about">
+        <h2>About Me</h2>
+        <p><b>H</b>i everyone, my name is <b>LAKSHMAN PRAVEEN VULASI</b>. I am from India. I am a software developer who has studying BTech. in stream of <b>Artificial Intellegence and Machine Learning</b> in Swarnandhra Institute of Engineering & Technology (SIET). I am highly motivated and competent to take up any challenging roles related to software and I am well-versed in computer programming languages like C, C++, Java, Python and other related software technologies. I have done an internship at <b>BLACKBUCKS</b> and gained valuable skills there. I am confident about my career aspirations and I am looking forward to working for my passinating way. I believe I possess the required skills and expertise to work effectively at software field. I am sure that my passion, dedication, and hard work in the software, our industry will lead me to achieve my goals. That’s all about me. Thank you</p>
+      </section>
+
+      <section id="projects">
+        <h2>My Projects</h2>
+        <ul>
+          <li>
+            <h3></h3>
+            <p>My software challenges:</p>
+            <a href=javascript:projects()>View Projects</a>
+            <p id="demo"></p>
+          </li>
+        </ul>
+      </section>
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <p>You can reach me at:</p>
+        <ul>
+          <li><a href="mailto:youremail@example.com">youremail@example.com</a></li>
+          <li><a href=textme.html>Text me</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <!--<script src="script.js"></script>-->
+    <script>
+      function projects(){
+        const project_list = ["face recognition",
+"Sentiment analysis for product rating",
+"E-MAIL SPAM DETECTION",
+"Advanced employee management system",
+"Image encryption"];
+          let text = "";
+          for (let i = 0; i < project_list.length; i++) {
+            text +="<li>"+ project_list[i] + "</li>";
+            
+          }
+          document.getElementById("demo").innerHTML = text;
+        }
+       
+    </script>
+   
+  </body>
+</html>
